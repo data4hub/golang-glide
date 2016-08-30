@@ -22,6 +22,7 @@ go version
 go version go1.7 linux/amd64
 ```
 ### glide
+glide -v
 ```
 glide version v0.12.0
 

@@ -1,7 +1,10 @@
+TAG := golang-glide
+
 build:
-	docker build -t golang-glide-gitsemver .
+	docker pull golang; \
+	docker build -t ${TAG} .
 
 run:    
-	docker run --rm -it golang-glide
+	docker run --rm -it ${TAG}
 
 .PHONY: build

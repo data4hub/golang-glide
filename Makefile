@@ -1,4 +1,4 @@
-TAG := golang-glide
+TAG := rest4hub/golang-glide
 
 build:
 	docker pull golang; \

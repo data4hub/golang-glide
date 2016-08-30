@@ -1,4 +1,4 @@
-# docker-golang-glide
+# golang-glide
 ### Golang
 go env
 ```

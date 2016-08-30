@@ -12,15 +12,14 @@ GOPATH="/go"
 GORACE=""
 GOROOT="/usr/local/go"
 GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
-GO15VENDOREXPERIMENT="1"
 CC="gcc"
-GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build927067273=/tmp/go-build -gno-record-gcc-switches"
 CXX="g++"
 CGO_ENABLED="1"
 ```
 go version
 ```
-go version go1.6.2 linux/amd64
+go version go1.7 linux/amd64
 ```
 ### glide
 ```

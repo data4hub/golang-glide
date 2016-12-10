@@ -1,7 +1,7 @@
 TAG := rest4hub/golang-glide:$(shell git rev-parse --abbrev-ref HEAD)
 
 build:
-	docker pull golang; \
+	docker pull rest4hub/golang-glide:fswatch; \
 	docker build -t ${TAG} .
 
 clean:
@@ -14,6 +14,7 @@ release:
 	bash -c 'export GO_ENV=$$(docker run $(TAG) go env); \
 	export GO_VERSION=$$(docker run $(TAG) go version); \
 	export GLIDE_VERSION=$$(docker run $(TAG) glide -v); \
+	export FSWATCH_VERSION=$$(docker run $(TAG) fswatch -version); \
 	bash README.tpl > README.md'
 
 run:    

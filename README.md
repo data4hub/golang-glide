@@ -1,4 +1,5 @@
 # golang-glide
+[![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=master)](https://travis-ci.org/rest4hub/golang-glide)
 ### Golang
 go env
 ```
@@ -13,17 +14,17 @@ GORACE=""
 GOROOT="/usr/local/go"
 GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
 CC="gcc"
-GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build574179233=/tmp/go-build -gno-record-gcc-switches"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build423917021=/tmp/go-build -gno-record-gcc-switches"
 CXX="g++"
 CGO_ENABLED="1"
 ```
 go version
 ```
-go version go1.7 linux/amd64
+go version go1.7.1 linux/amd64
 ```
 ### glide
 glide -v
 ```
-glide version v0.12.1
+glide version v0.12.3
 
 ```

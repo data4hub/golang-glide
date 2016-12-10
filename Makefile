@@ -1,7 +1,7 @@
 TAG := rest4hub/golang-glide:$(shell git rev-parse --abbrev-ref HEAD)
 
 build:
-	docker pull golang; \
+	docker pull golang-glide:latest; \
 	docker build -t ${TAG} .
 
 clean:

@@ -19,4 +19,7 @@ release:
 run:    
 	docker run --rm -it ${TAG}
 
+publish:
+	docker push ${TAG}
+
 .PHONY: build

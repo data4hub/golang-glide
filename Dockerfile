@@ -1,4 +1,3 @@
-FROM golang
+FROM rest4hub/golang-glide
 
-RUN curl -s https://glide.sh/get | sh
-RUN apt-get update && apt-get install netcat -y
+RUN go get -u -v github.com/codeskyblue/fswatch

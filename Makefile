@@ -14,12 +14,13 @@ release:
 	bash -c 'export GO_ENV=$$(docker run $(TAG) go env); \
 	export GO_VERSION=$$(docker run $(TAG) go version); \
 	export GLIDE_VERSION=$$(docker run $(TAG) glide -v); \
+	export FSWATCH_VERSION=$$(docker run $(TAG) fswatch -version); \
 	bash README.tpl > README.md'
-
-run:    
-	docker run --rm -it ${TAG}
 
 publish:
 	docker push ${TAG}
+
+run:    
+	docker run --rm -it ${TAG}
 
 .PHONY: build

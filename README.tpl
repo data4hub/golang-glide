@@ -1,5 +1,4 @@
-echo '# golang-glide
-[![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=master)](https://travis-ci.org/rest4hub/golang-glide)
+echo '# golang-glide-fswatch
 ### Golang
 go env
 ```
@@ -13,5 +12,11 @@ go version
 glide -v
 ```
 '"$GLIDE_VERSION"'
+
+```
+### fswatch
+fswatch -v
+```
+'"$FSWATCH_VERSION"'
 
 ```'

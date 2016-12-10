@@ -1,4 +1,4 @@
-TAG := rest4hub/golang-glide
+TAG := rest4hub/golang-glide:$(shell git rev-parse --abbrev-ref HEAD)
 
 build:
 	docker pull golang; \

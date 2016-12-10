@@ -8,4 +8,4 @@ before_install:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   
 script:
-  - make publish
+  - make publish -e BRANCH=$TRAVIS_BRANCH

@@ -1,4 +1,5 @@
-TAG := rest4hub/golang-glide:$(shell git rev-parse --abbrev-ref HEAD)
+BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
+TAG := rest4hub/golang-glide:$(BRANCH)
 
 build:
 	docker pull golang-glide:latest; \

@@ -1,5 +1,5 @@
 notifications:
-  slack: rest4hub:McnBEaeCAmAjAQZwGUMxOlSi
+  slack: $SLACK_TOKEN
 
 sudo: required
 

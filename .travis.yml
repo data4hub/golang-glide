@@ -1,14 +1,11 @@
 notifications:
-  slack: "$SLACK_TOKEN"
-
+  slack:
+    secure: Y5cOsxcARcE+WtIyp2RfsQtcG7GJln3SU/FS0dNvoU5wGVorqNAiYMDIlyqw4fNJKZoquTRJINzilVN+LDghZ2QhHOQbAQ/PeeIAuQPzz2WRVtAjEmqVQcOp9jjaJC1SrT1tdEtmpUa2lTehVwsL14tKuT4ZxOkQ2j+DweWb+6AUxJuE6V/P1R1r1JVi7XXnJm9j979dLKBeJ2rPJTzqtvhIxMq3aHZmEXVB3OrADD2jLCejFPWLQ/yUo7l/p6ES8gpTew8ieVJfMoZ5KQ617M1zgics7Hv6U6PTbqOw/9iBUUoE4Y3NqaYzDokK1YrfXWMILa4PtZfI6+P1NjlKLtEXvVUvQb916YtnXZE84nvkn/HWIx9QNd3t5IaaJp+ABYDc1GeAWyqiVXKy3e7N9pjv1gG7ao/Y0rjepmlUvKEuvEZ8P1KT8F+ZNmDwFQ2pcJu9NNhxgBboJlIdFUTETHF5qxaIlQ/G9ULX7NX+KFjlX5tE9Eg4LTz6IwRF4wN3f4X3q52ejiwRBlb46jII+QCWo5KbhjFjkeUSr16KkdWRWrZJnW5ubX6633Yxco2eMLRcYnlDAsa5FIteifBbyBQtwYttBGBZLBBRGTq0QDtS2piavnNg6jMYRjBJoQb54C41d3EXVie3Gg+iIPVodg04PtquwPfoIp+KHi7/Ei4=
 sudo: required
-
 services:
-  - docker
-
+- docker
 before_install:
-  - make build release -e BRANCH=$TRAVIS_BRANCH
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  
+- make build release -e BRANCH=$TRAVIS_BRANCH
+- docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 script:
-  - make publish -e BRANCH=$TRAVIS_BRANCH
+- make publish -e BRANCH=$TRAVIS_BRANCH

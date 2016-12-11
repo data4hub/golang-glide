@@ -1,3 +1,6 @@
+notifications:
+  slack: rest4hub:nhskIBSKufzVrusKmTcooIt5
+
 sudo: required
 
 services:

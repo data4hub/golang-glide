@@ -1,5 +1,5 @@
 notifications:
-  slack: rest4hub:nhskIBSKufzVrusKmTcooIt5
+  slack: rest4hub:McnBEaeCAmAjAQZwGUMxOlSi
 
 sudo: required
 
@@ -12,6 +12,3 @@ before_install:
   
 script:
   - make publish -e BRANCH=$TRAVIS_BRANCH
-
-notifications:
-  slack: $SLACK_TOKEN

@@ -19,6 +19,5 @@ glide -v
 git semver help
 ```
 '"$GITSEMVER_HELP"'
-
 ```
 '

@@ -14,7 +14,7 @@ GORACE=""
 GOROOT="/usr/local/go"
 GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
 CC="gcc"
-GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build027226635=/tmp/go-build -gno-record-gcc-switches"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build273087784=/tmp/go-build -gno-record-gcc-switches"
 CXX="g++"
 CGO_ENABLED="1"
 ```
@@ -44,6 +44,5 @@ Commands
  patch|next Generates a tag for the next patch version and echos it to the screen
  update     Check for updates and install if there are any available
  help       This message
-
 ```
 

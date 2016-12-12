@@ -1,4 +1,4 @@
-# golang-glide
+# golang-glide-gitsemver
 [![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=gitsemver)](https://travis-ci.org/rest4hub/golang-glide)
 ### Golang
 go env
@@ -14,7 +14,7 @@ GORACE=""
 GOROOT="/usr/local/go"
 GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
 CC="gcc"
-GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build273087784=/tmp/go-build -gno-record-gcc-switches"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build808885011=/tmp/go-build -gno-record-gcc-switches"
 CXX="g++"
 CGO_ENABLED="1"
 ```

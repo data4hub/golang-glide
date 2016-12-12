@@ -1,4 +1,4 @@
-echo '# golang-glide
+echo '# golang-glide-gitsemver-awscli
 [![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=gitsemver)](https://travis-ci.org/rest4hub/golang-glide)
 ### Golang
 go env

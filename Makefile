@@ -1,5 +1,5 @@
 BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
-TAG := rest4hub/golang-glide:gitsemver
+TAG := rest4hub/golang-glide:$(BRANCH)
 
 build:
 	docker pull rest4hub/golang-glide:fswatch; \

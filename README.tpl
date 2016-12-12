@@ -20,4 +20,9 @@ git semver help
 ```
 '"$GITSEMVER_HELP"'
 ```
+### awscli
+aws --version
+```
+'"$AWS_CLI_VERSION"'
+```
 '

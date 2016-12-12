@@ -1,5 +1,5 @@
-echo '# golang-glide-fswatch-aws-cli
-[![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=fswatch-awscli)](https://travis-ci.org/rest4hub/golang-glide)
+echo '# golang-glide
+[![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=gitsemver)](https://travis-ci.org/rest4hub/golang-glide)
 ### Golang
 go env
 ```
@@ -15,15 +15,10 @@ glide -v
 '"$GLIDE_VERSION"'
 
 ```
-### fswatch
-fswatch -v
+### git semver
+git semver help
 ```
-'"$FSWATCH_VERSION"'
+'"$GITSEMVER_HELP"'
 
-```
-### awscli
-aws --version
-```
-'"$AWS_CLI_VERSION"'
 ```
 '

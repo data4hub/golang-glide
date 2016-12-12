@@ -1,5 +1,5 @@
 BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
-TAG := rest4hub/golang-glide:$(BRANCH)
+TAG := rest4hub/golang-glide:gitsemver
 
 build:
 	docker pull rest4hub/golang-glide:fswatch; \
@@ -15,14 +15,13 @@ release:
 	bash -c 'export GO_ENV=$$(docker run $(TAG) go env); \
 	export GO_VERSION=$$(docker run $(TAG) go version); \
 	export GLIDE_VERSION=$$(docker run $(TAG) glide -v); \
-	export FSWATCH_VERSION=$$(docker run $(TAG) fswatch -version); \
-	export AWS_CLI_VERSION=$$(docker run $(TAG) aws --version 2>&1); \
+	export GITSEMVER_HELP=$$(docker run $(TAG) git semver help); \
 	bash README.tpl > README.md'
-
-run:    
-	docker run --rm -it ${TAG}
 
 publish:
 	docker push ${TAG}
+
+run:    
+	docker run --rm -it ${TAG}
 
 .PHONY: build

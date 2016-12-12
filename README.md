@@ -1,5 +1,5 @@
-# golang-glide-fswatch-aws-cli
-[![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=fswatch-awscli)](https://travis-ci.org/rest4hub/golang-glide)
+# golang-glide
+[![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=gitsemver)](https://travis-ci.org/rest4hub/golang-glide)
 ### Golang
 go env
 ```
@@ -14,7 +14,7 @@ GORACE=""
 GOROOT="/usr/local/go"
 GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
 CC="gcc"
-GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build099998594=/tmp/go-build -gno-record-gcc-switches"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build027226635=/tmp/go-build -gno-record-gcc-switches"
 CXX="g++"
 CGO_ENABLED="1"
 ```
@@ -28,15 +28,22 @@ glide -v
 glide version v0.12.3
 
 ```
-### fswatch
-fswatch -v
+### git semver
+git semver help
 ```
-2.3
+Usage: git semver [command]
 
-```
-### awscli
-aws --version
-```
-aws-cli/1.11.28 Python/2.7.9 Linux/4.4.27-moby botocore/1.4.85
+This script automates semantic versioning. Requires a valid change log at CHANGELOG.md.
+
+See https://github.com/markchalloner/git-semver for more detail.
+
+Commands
+ get        Gets the current version (tag)
+ major      Generates a tag for the next major version and echos it to the screen
+ minor      Generates a tag for the next minor version and echos it to the screen
+ patch|next Generates a tag for the next patch version and echos it to the screen
+ update     Check for updates and install if there are any available
+ help       This message
+
 ```
 

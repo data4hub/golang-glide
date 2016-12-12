@@ -14,7 +14,7 @@ GORACE=""
 GOROOT="/usr/local/go"
 GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
 CC="gcc"
-GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build203669371=/tmp/go-build -gno-record-gcc-switches"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build439676674=/tmp/go-build -gno-record-gcc-switches"
 CXX="g++"
 CGO_ENABLED="1"
 ```
@@ -28,7 +28,7 @@ glide -v
 glide version v0.12.3
 
 ```
-### fswatch
+### stepup
 stepup --help
 ```
 Commands:

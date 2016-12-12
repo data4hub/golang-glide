@@ -16,8 +16,7 @@ glide -v
 
 ```
 ### fswatch
-fswatch -v
+stepup --help
 ```
-'"$FSWATCH_VERSION"'
-
+'"$STEPUP_HELP"'
 ```'

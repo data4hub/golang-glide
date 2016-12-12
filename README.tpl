@@ -14,4 +14,11 @@ glide -v
 ```
 '"$GLIDE_VERSION"'
 
-```'
+```
+## Image tags
+[fswatch-awscli](https://github.com/rest4hub/golang-glide/tree/fswatch-awscli)  
+[fswatch](https://github.com/rest4hub/golang-glide/tree/fswatch)  
+[gitsemver-awscli](https://github.com/rest4hub/golang-glide/tree/gitsemver-awscli)  
+[gitsemver](https://github.com/rest4hub/golang-glide/tree/gitsemver)  
+[stepup](https://github.com/rest4hub/golang-glide/tree/stepup)  
+'

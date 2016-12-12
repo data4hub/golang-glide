@@ -1,4 +1,4 @@
-echo '# golang-glide-fswatch
+echo '# golang-glide-stepup
 [![Build Status](https://travis-ci.org/rest4hub/golang-glide.svg?branch=fswatch)](https://travis-ci.org/rest4hub/golang-glide)
 ### Golang
 go env
